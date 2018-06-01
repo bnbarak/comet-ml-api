@@ -2,6 +2,9 @@
 
 Based on the supercharge Machine learning library [comet.ml](comet.ml) 
 
+## Documentation
+See Comet.ml API [documentation](https://staging.comet.ml/docs/rest-api/endpoints/)
+
 ## Installation
 `npm install comet-ml-api`
 
@@ -57,7 +60,7 @@ cometMl.experimentImages(someExperimentKey).then((response) => {})
 ```
 cometMl.experimentParams(someExperimentKey).then((response) => {})
 ```
-### DefinisMetricsion
+### METRICS
 ```
 cometMl.experimentMetrics(someExperimentKey).then((response) => {})
 ```
