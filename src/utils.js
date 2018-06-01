@@ -15,29 +15,25 @@ export const END_POINTS = {
   'experiment/installed-packages': 'experiment/installed-packages',
 };
 
-export const BASE_URL = {
-  v1: 'https://staging.comet.ml/api/rest/v1/',
-};
+export const BASE_URL = { v1: 'https://www.comet.ml/api/rest/v1/' };
 export const DEFAULT_VERSION = 'v1';
 export const COMET_HEADER = 'Authorization';
 
-export const baseUrl = (version) => {
-  return BASE_URL[version];
-};
+export const baseUrl = version => BASE_URL[version];
+export const getEndPoint = endPoint => END_POINTS[endPoint];
 
 export const generateRequestUri = ({ endPoint, version }) => {
-  const url = `${baseUrl(version)}${endPoint}`;
+  const endPointValue = getEndPoint(endPoint);
+  const url = `${baseUrl(version)}${endPointValue}`;
   return url;
-}
+};
 
 export const getRequest = ({ endPoint, params, version, apiKey }) => {
   const uri = generateRequestUri({ endPoint, params, version });
   const options = {
     uri,
     qs: params,
-    headers: {
-      [COMET_HEADER]: apiKey,
-    },
+    headers: { [COMET_HEADER]: apiKey },
     json: true,
   };
   return new Promise((resolve, reject) => {
@@ -48,8 +44,4 @@ export const getRequest = ({ endPoint, params, version, apiKey }) => {
     });
   });
 };
-
-export const getEndPoint = (endPoint) => {
-  return END_POINTS[endPoint];
-}
 
