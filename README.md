@@ -18,5 +18,55 @@ cometMl.projects().then((response) => {
 }).catch(e => {
   console.log(e);
 });
-
 ```
+
+## API
+### Projects
+```
+cometMl.projects().then((response) => {})
+```
+### Experiments
+```
+cometMl.experiments(projectId).then((response) => {})
+```
+### HTML
+```
+cometMl.experimentHtml(someExperimentKey).then((response) => {})
+```
+### Code
+```
+cometMl.experiments(projectId).then((response) => {})
+```
+### Stdout
+```
+cometMl.experimentStdout(someExperimentKey).then((response) => {})
+```
+### Installed Packages
+```
+cometMl.experimentInstalledPackages(someExperimentKey).then((response) => {})
+```
+### Graph Definision
+```
+cometMl.experimentGraph(someExperimentKey).then((response) => {})
+```
+### Images
+```
+cometMl.experimentImages(someExperimentKey).then((response) => {})
+```
+### Hyper Params
+```
+cometMl.experimentParams(someExperimentKey).then((response) => {})
+```
+### DefinisMetricsion
+```
+cometMl.experimentMetrics(someExperimentKey).then((response) => {})
+```
+### Log Other
+```
+cometMl.experimentLogOther(someExperimentKey).then((response) => {
+```
+### Raw Metrics
+```
+cometMl.experimentMetricsRaw(someExperimentKey).then((response) => {})
+```
+
