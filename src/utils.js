@@ -23,7 +23,7 @@ export const baseUrl = version => BASE_URL[version];
 export const getEndPoint = endPoint => END_POINTS[endPoint];
 
 export const generateRequestUri = ({ endPoint, version }) => {
-  const endPointValue = getEndPoint(endPoint)
+  const endPointValue = getEndPoint(endPoint);
   const url = `${baseUrl(version)}${endPointValue}`;
   return url;
 };

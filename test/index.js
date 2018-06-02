@@ -1,5 +1,6 @@
 import {assert} from 'chai';
 import sinon from 'sinon';
+import should from 'should';
 import request from 'request-promise';
 import cometMlAPI from '../src/index';
 
