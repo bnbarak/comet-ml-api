@@ -1,7 +1,7 @@
 import request from 'request-promise';
 
 export const END_POINTS = {
-  project: 'projects',
+  projects: 'projects',
   experiments: 'experiments',
   'experiment/html': 'experiment/html',
   'experiment/code': 'experiment/code',
@@ -23,13 +23,13 @@ export const baseUrl = version => BASE_URL[version];
 export const getEndPoint = endPoint => END_POINTS[endPoint];
 
 export const generateRequestUri = ({ endPoint, version }) => {
-  const endPointValue = getEndPoint(endPoint);
+  const endPointValue = getEndPoint(endPoint)
   const url = `${baseUrl(version)}${endPointValue}`;
   return url;
 };
 
 export const getRequest = ({ endPoint, params, version, apiKey }) => {
-  const uri = generateRequestUri({ endPoint, params, version });
+  const uri = generateRequestUri({ endPoint, version });
   const options = {
     uri,
     qs: params,

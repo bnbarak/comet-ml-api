@@ -1,27 +1,27 @@
 const CometMlAPI = require('../lib');
 
-const apiKey = 's9ILl8ox92nZSTVh8eo4B47LC';
+const apiKey = 'oUZdKbWfFGEuX3AMHaptCCXrl';
 const cometMl = new CometMlAPI(apiKey, 'v1');
-const projectId = '46e1fb2e703e42c4b0546a6f22de7229';
-const someExperimentKey = '811923d524434e9ea773acc8cff38a8e';
+const projectId = '173a1ea5de2246b49827dac1cf13d715';
+const someExperimentKey = 'c874d6f369034bfb846e611f345f06e2';
 
 
 console.log(cometMl.getVersion());
 
 cometMl.projects().then((response) => {
-  // console.log('projects', response);
-}).catch(e => {
+  console.log('projects', response);
+}).catch((e) => {
   console.log(e);
 });
 
 cometMl.experiments(projectId).then((response) => {
-  // console.log('experiments', response);
+  console.log('experiments', response);
 }).catch((e) => {
   console.log(e);
 });
 
 cometMl.experimentHtml(someExperimentKey).then((response) => {
-  // console.log('experimentHtml', response);
+  console.log('experimentHtml', response);
 }).catch((e) => {
   console.log(e);
 });

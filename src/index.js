@@ -11,7 +11,7 @@ const lib = class CometMlAPI {
   }
 
   projects() {
-    const endPoint = END_POINTS.project;
+    const endPoint = END_POINTS.projects;
     const params = {};
     const { version, apiKey } = this;
     return getRequest({ endPoint, params, version, apiKey });
