@@ -66,7 +66,7 @@ cometMl.experimentMetrics(someExperimentKey).then((response) => {})
 ```
 ### Log Other
 ```
-cometMl.experimentLogOther(someExperimentKey).then((response) => {
+cometMl.experimentLogOther(someExperimentKey).then((response) => {})
 ```
 ### Raw Metrics
 ```
