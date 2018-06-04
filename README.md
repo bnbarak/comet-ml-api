@@ -1,6 +1,6 @@
 # Node.js Client for Comet.ml
 
-Based on the supercharge Machine learning library [comet.ml](comet.ml) 
+Based on the supercharge Machine learning service [comet.ml](comet.ml) 
 
 ## Documentation
 See Comet.ml API [documentation](https://staging.comet.ml/docs/rest-api/endpoints/)
