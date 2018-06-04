@@ -60,7 +60,7 @@ cometMl.experimentImages(someExperimentKey).then((response) => {})
 ```
 cometMl.experimentParams(someExperimentKey).then((response) => {})
 ```
-### METRICS
+### Metrics
 ```
 cometMl.experimentMetrics(someExperimentKey).then((response) => {})
 ```
