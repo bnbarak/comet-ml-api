@@ -3,7 +3,7 @@
 Based on the supercharge machine learning library [comet.ml](comet.ml)
 
 ## Documentation
-See Comet.ml API [documentation](https://staging.comet.ml/docs/rest-api/endpoints/)
+See Comet.ml API [documentation](https://comet.ml/docs/rest-api/endpoints/)
 
 ## Installation
 `npm install comet-ml-api`
