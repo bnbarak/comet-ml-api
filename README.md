@@ -48,7 +48,7 @@ cometMl.experimentStdout(someExperimentKey).then((response) => {})
 ```
 cometMl.experimentInstalledPackages(someExperimentKey).then((response) => {})
 ```
-### Graph Definision
+### Graph Definition
 ```
 cometMl.experimentGraph(someExperimentKey).then((response) => {})
 ```
