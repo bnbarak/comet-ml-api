@@ -1,4 +1,4 @@
-# Node.js Client for Comet.ml
+# Node.js SDK for Comet.ml
 
 Based on the supercharge Machine learning service [comet.ml](comet.ml) 
 
