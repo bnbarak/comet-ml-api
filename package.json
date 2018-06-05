@@ -1,6 +1,6 @@
 {
   "name": "comet-ml-api",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Node.js Client for Comet.ml",
   "main": "./lib/index.js",
   "scripts": {
